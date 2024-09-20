@@ -13,4 +13,6 @@ O array auxiliar é marcado onde houve alguma modificação no vetor de destino 
 \
 i é incrementado nas chamadas recursivas para que o vetor de destino não tenha sobreposições e atinja a condição de parada da recursão (i == n).
 \
-No final a função tem um tempo de execução de O(n!) pois está gerando todas as combinações possíveis dentro daquele vetor; fiz uma verificação de valores repetidos para que não aparecessem todas as 24 permutações possíveis, mas apenas aquelas que são diferentes umas das outras.
+No final a função tem um tempo de execução de O(n!) pois está gerando todas as combinações possíveis dentro daquele vetor; fiz uma verificação de valores repetidos para que não aparecessem todas as 24 permutações possíveis, mas apenas aquelas que são diferentes umas das outras (sendo totalmente ineficaz se não houverem valores repetidos).
+\
+Se quiserem podem usar um malloc para ter uma alocação dinâmica de memória e assim testar diferentes casos, mas aqui eu foquei no caso de exemplo e acabei usando-o como base.
